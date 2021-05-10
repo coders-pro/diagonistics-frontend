@@ -1,9 +1,8 @@
-import logo from './logo.svg'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Home from './screens/Home'
-import Dashboard from './screens/Dashboard'
+import Home from './screens/home/Home'
+import Dashboard from './screens/dashboard/Dashboard'
 import { Layout, Menu } from 'antd'
 import {
   MenuUnfoldOutlined,
@@ -12,7 +11,7 @@ import {
   VideoCameraOutlined,
   UploadOutlined,
 } from '@ant-design/icons'
-import { DashboardStyle } from './DashboardStyle'
+import { LayoutStyle } from './DashboardStyle'
 
 function App() {
   const [collapsed, setCollapsed] = useState(false)
@@ -25,7 +24,7 @@ function App() {
 
 
   return (
-    <DashboardStyle>
+    <LayoutStyle>
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="logo" />
@@ -63,7 +62,7 @@ function App() {
           </Content>
         </Layout>
       </Layout>
-    </DashboardStyle>
+    </LayoutStyle>
   )
 }
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const DashboardStyle = styled.div`
+export const LayoutStyle = styled.div`
 
     #components-layout-demo-custom-trigger .trigger {
     padding: 0 24px;
