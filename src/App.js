@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Router>
-      <LayoutStyle>
+      {/* <LayoutStyle>
         <Layout>
           <Sider trigger={null} collapsible collapsed={collapsed}>
             <div className="logo" />
@@ -56,14 +56,14 @@ function App() {
                 padding: 24,
                 minHeight: 280,
               }}
-            >
-              <Route path='/' exact component={Home} />
-              <Route path='/dashboard' component={Dashboard} />
-            </Content>
+            > */}
+      <Route path='/' exact component={Home} />
+      <Route path='/dashboard' component={Dashboard} />
+      {/* </Content>
           </Layout>
         </Layout>
-      </LayoutStyle>
-      <Route path='/login' exact component={Login} />
+      </LayoutStyle> */}
+      <Route path='/login' component={Login} />
     </Router>
   )
 }
